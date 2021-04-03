@@ -1,0 +1,16 @@
+.btn {
+  font-size: .8em;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .04em;
+}
+
+.btn-outline {
+  color: $primary;
+  border: 1px solid $primary;
+
+  &:hover {
+    color: $primary;
+    background-color: $secondary;
+  }
+}

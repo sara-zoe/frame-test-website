@@ -1,1 +1,4 @@
 node_modules
+.DS_Store
+scss/_icon-list.scss
+scss/starter.scss

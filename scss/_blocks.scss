@@ -1,0 +1,73 @@
+// Main Feature Content
+section {
+  margin-bottom: 8rem;
+}
+
+.content-blocks {
+  > *:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+
+  .content-item {
+    margin-bottom: 7rem;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    .col-sm:last-child {
+      text-align: center;
+    }
+  }
+}
+
+.content-text {
+  .btn {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+//Sponsors Block
+.sponsors .row {
+  justify-content: space-between;
+
+  img {
+    margin-bottom: 2.5rem;
+  }
+}
+
+// Feature Image Block
+.feature-image {
+  text-align: center;
+}
+
+// Footer
+.footer {
+  color: #333;
+  background-color: $secondary;
+
+  .foot-head {
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+
+  .footer-text {
+    a {
+      color: #333;
+      text-decoration: underline;
+
+      &:hover {
+        color: $primary;
+      }
+    }
+  }
+  .footer-subscribe {
+    padding-bottom: 4rem;
+
+    .btn {
+      width: 100%;
+    }
+  }
+}

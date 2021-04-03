@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+// Override Bootstrap's Sass default variables, then import the styles needed.
+
+// Global options
+$enable-gradients: false;
+$enable-shadows: true;
+$border-radius: 0;
+$font-family-sans-serif: "PT Sans", sans-serif;
+$container-max-widths: (
+  xl: 1180px
+);
+
+// Colours
+$body-color: 	#000;
+$body-bg: 		#fff;
+$primary: 		#ee2d28;
+$secondary: 	#f2f2f2;
+$dark:          #000;
+$danger: 		#7952b3;
+
+// Buttons
+$btn-padding-y: 	18px;
+$btn-padding-x: 	50px;
+$btn-border-width: 1px;
+
+// Navbar
+$navbar-padding-y: 	0;
+$navbar-padding-x: 	0;
+$navbar-light-color: #333;
+$navbar-light-active-color: 	#333;
+$navbar-light-hover-color: $primary;
+$navbar-nav-link-padding-x: 1.8rem;
+
+// Forms
+$input-bg: transparent;
+$input-color: #333;
+$input-border-color: #333;
+$input-box-shadow: none;
+$input-disabled-bg: $secondary;
+
+// Importing Bootstrap styles
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/mixins";
+@import "bootstrap/scss/root";
+@import "bootstrap/scss/reboot";
+@import "bootstrap/scss/type";
+@import "bootstrap/scss/images";
+// @import "bootstrap/scss/code";
+@import "bootstrap/scss/grid";
+@import "bootstrap/scss/forms";
+@import "bootstrap/scss/buttons";
+@import "bootstrap/scss/transitions";
+// @import "bootstrap/scss/input-group"; // Requires forms
+// @import "bootstrap/scss/custom-forms";
+@import "bootstrap/scss/nav";
+@import "bootstrap/scss/navbar"; // Requires nav
+// @import "bootstrap/scss/card";
+// @import "bootstrap/scss/alert";
+// @import "bootstrap/scss/media";
+// @import "bootstrap/scss/list-group";
+@import "bootstrap/scss/close";
+// @import "bootstrap/scss/toasts";
+@import "bootstrap/scss/modal"; // Requires transitions
+// @import "bootstrap/scss/tooltip";
+// @import "bootstrap/scss/popover";
+@import "bootstrap/scss/utilities";
+
+//
+// Custom styles
+//
+
+@import "buttons";
+@import "navbar";
+@import "banner";
+@import "blocks";
+
+body {
+  letter-spacing: .04em;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 700;
+}
+
+h2,
+h3 {
+  margin-bottom: 1.5em;
+  font-size: 1.5rem;
+}
+
+h3 {
+  margin-top: 1.5em;
+}
+
+.highlight {
+  color: $primary !important;
+}
+
+.p-6 {
+  padding: $spacer * 6.5;
+}
+
+.py-6 {
+  padding-top: $spacer * 6.5;
+  padding-bottom: $spacer * 6.5;
+
+}
+
+.form-control {
+  padding-top: 22px;
+  padding-bottom: 22px;
+}
+
+
+// Tablets and smaller
+@include media-breakpoint-down(md) {
+  .header-links .btn {
+    display: none;
+  }
+  .navbar-brand {
+    flex-grow: 1;
+    padding: 15px 0;
+  }
+
+  .news-feed {
+
+    .news-text {
+      padding-right: 4rem;
+      padding-bottom: 7rem;
+    }
+
+    .col-lg-4:last-child .news-text {
+      padding-bottom: 0;
+    }
+  }
+}
+
+// Mobile Phone Layout
+@include media-breakpoint-down(sm) {
+  img {
+    max-width: 100%;
+  }
+
+  .content-text {
+    padding: 0 4rem 15px 15px;
+  }
+
+  .news-feed {
+    .img-fluid {
+      width: 100%;
+    }
+  }
+
+  .sponsors .row img {
+    width: 50%;
+  }
+}

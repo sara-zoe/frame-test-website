@@ -1,0 +1,30 @@
+
+.navbar {
+  .container-fluid {
+    padding-right: 0;
+    padding-left: 2rem;
+  }
+
+  .nav-link {
+    font-weight: 700;
+  }
+
+  &.navbar-light {
+    .navbar-toggler {
+      margin-right: 15px;
+      border: none;
+    }
+  }
+
+  .btn {
+    padding: 28px 32px;
+  }
+
+  .modal {
+    .btn {
+      padding-top: 10px;
+      padding-bottom: 10px;
+      letter-spacing: .04rem;
+    }
+  }
+}
