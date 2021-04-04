@@ -4,8 +4,8 @@
 
   &.p-lg-5 {
     @include media-breakpoint-up(md) {
-      padding-top: 5rem !important;
-      padding-bottom: 5rem !important;
+      padding-top: 5rem !important;	/* stylelint-disable-line declaration-no-important */
+      padding-bottom: 5rem !important; /* stylelint-disable-line declaration-no-important */
     }
   }
 
